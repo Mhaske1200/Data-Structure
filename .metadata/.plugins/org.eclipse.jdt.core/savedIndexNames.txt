@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+D:\SHUBHAM&VISHAL PGDAC_SEPT_2022\Data Structure\.metadata\.plugins\org.eclipse.jdt.core
+2060460863.index
+573057840.index
+1865797976.index
+227146537.index
+662587032.index
+2446798781.index

@@ -1,0 +1,121 @@
+package PriorityQueue;
+class Element
+{
+	int data,pri;
+	public Element()
+	{
+		
+	}
+	public Element(int data,int pri)
+	{
+		this.data=data;
+		this.pri=pri;
+	}
+	@Override
+	public String toString() {
+		return "Element [data=" + data + ", pri=" + pri + "]";
+	}
+
+	public int getData() {
+		return data;
+	}
+
+	public void setData(int data) {
+		this.data = data;
+	}
+
+	public int getPri() {
+		return pri;
+	}
+
+	public void setPri(int pri) {
+		this.pri = pri;
+	}
+	
+}
+
+class Queue
+{
+	int size,rear,front;
+	Element []arr;
+	public Queue()
+	{
+		size=5;
+		rear=front=-1;
+		arr=new Element[size];
+	}
+	public Queue(int s)
+	{
+		size=s;
+		rear=front=-1;
+		arr=new Element[size];
+	}
+	public void enQueue(Element data)
+	{
+		Element temp;
+		if(!isFull())
+		{
+			// ************* insert data in Queue ******
+			if(front==-1)
+				front=0;
+			rear++;
+			arr[rear]=data;
+			//************ sort Queue **************
+			int mysize=rear;
+			for(int i=0;i<mysize;i++)
+			{
+				for(int j=0;j<mysize-i-1;j++)
+				{
+					if()
+					{
+						temp=a[j];
+						a[j]=a[j+1];
+						a[j+1]=temp;
+					}
+				}
+			}
+			
+			
+		}
+		
+	}
+	public Element deQueue()
+	{
+		Element data=null;
+		if(!isEmpty())
+		{
+			data=arr[front];
+			if(front==rear)
+				front=rear=-1;
+			else
+				front++;
+		}
+		return data;
+	}
+	public boolean isEmpty()
+	{
+		if(front==-1)
+			return true;
+		else
+			return false;
+		
+	}
+	public boolean isFull()
+	{
+		if(rear==size-1)
+			return true;
+		else
+			return false;
+	
+	}
+		
+	}
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

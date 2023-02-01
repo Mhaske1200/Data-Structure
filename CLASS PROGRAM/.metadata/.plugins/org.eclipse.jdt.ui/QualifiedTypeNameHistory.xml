@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="Stack"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="Question_01.MyQueue"/>
+    <fullyQualifiedTypeName name="CircularQueue.MyQueue"/>
+    <fullyQualifiedTypeName name="PriorityQueue.Queue"/>
+    <fullyQualifiedTypeName name="PriorityQueue.Element"/>
+    <fullyQualifiedTypeName name="question_01.LinkedList"/>
+    <fullyQualifiedTypeName name="Question_02.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="Question_02.Node"/>
+</qualifiedTypeNameHistroy>

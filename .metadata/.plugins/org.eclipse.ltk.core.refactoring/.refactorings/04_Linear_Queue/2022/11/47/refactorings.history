@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Question_01.Queue&apos; to &apos;Integer_Queue&apos;&#x0D;&#x0A;- Original project: &apos;04_Queue&apos;&#x0D;&#x0A;- Original element: &apos;Question_01.Queue&apos;&#x0D;&#x0A;- Renamed element: &apos;Question_01.Integer_Queue&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Queue&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Question_01{Queue.java[Queue" matchStrategy="1" name="Integer_Queue" qualified="false" references="true" similarDeclarations="false" stamp="1668572058213" textual="false" version="1.0"/>
+</session>

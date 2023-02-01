@@ -1,0 +1,49 @@
+package question_01;
+
+public class LinkedList {
+	Node head;
+	public LinkedList()
+	{
+		head=null;
+	}
+	private  void add(int data)
+	{
+		Node record,move;
+		//create node
+		record=new Node(data); // para const. of Node class
+		// linke node to Linked List
+		if(head==null) // if this is first node
+			head=record;
+		else 
+		{
+			// if it is not first node ... add at end
+			for(move=head;move.next!=null;move=move.next);
+			move.next=record;
+		}
+	}
+	public void createLinkedList(int terms)
+	{
+		int no=2;
+		for(int i=1;i<=terms;i++)
+		{
+			add(no);
+			no=no+2;
+		}
+	}
+	public void display()
+	{
+		Node move=head;
+		if(head==null)
+		{
+			System.out.println(" Linked List is empty !!! ");
+			return ;
+		}
+		move=head;
+		while(move!=null)
+		{
+			System.out.println(move.data+"-->");
+			move=move.next;
+		}
+	}
+
+}

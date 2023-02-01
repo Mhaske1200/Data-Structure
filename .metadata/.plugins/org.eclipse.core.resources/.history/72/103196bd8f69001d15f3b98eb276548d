@@ -1,0 +1,155 @@
+package Binary_Search_Tree;
+
+import java.util.Scanner;
+
+public class Binary_Search_Tree 
+{
+	Node root;
+	
+	public Binary_Search_Tree() 
+	{
+		root = null;
+	}
+	
+	public void addNode(int data)
+	{
+		Scanner sc = new Scanner(System.in);
+		Node record = new Node(data);
+		if(root == null)
+		{
+			root = record;
+		}
+		else
+		{
+			Node move = root;
+			while(true)
+			{
+				if(data < move.data)
+				{
+					if(move.left == null)
+					{
+						move.left = record;
+						break;
+					}
+					else
+					{
+						move = move.left;
+					}
+				}
+				else if(data > move.data)
+				{
+					if(move.right == null)
+					{
+						move.right = record;
+						break;
+					}
+					else
+					{
+						move = move.right;
+					}
+				}
+			}
+		}			
+	}
+	
+	public void inorder(Node root)
+	{
+		if (root!=null)
+		{
+			inorder(root.left);
+			System.out.println("Data="+root.data);
+			inorder(root.right);
+			
+		}
+	}
+	
+	public void preorder(Node root)
+	{
+		if (root!=null)
+		{
+			System.out.println("Data="+root.data);
+			preorder(root.left);
+			preorder(root.right);
+			
+		}
+	}
+	public void postorder(Node root)
+	{
+		if (root!=null)
+		{
+			postorder(root.left);
+			postorder(root.right);
+			System.out.println("Data="+root.data);
+		}
+	}
+	
+	public void display()
+	{
+		System.out.println("InOder Display - ");
+		inorder(root);
+		System.out.println("PreOder Display - ");
+		preorder(root);
+		System.out.println("PostOder Display - ");
+		postorder(root);
+	}
+	
+	public int FindMax()
+	{
+		Node move = root;
+		int Max =0;
+		while(move!=null) 
+		{
+		if(move.data > Max)
+		{
+			Max = move.data;
+			move = move.right;
+		}
+		}
+		return Max;
+	}
+	
+	public int FindMin()
+	{
+		Node move = root;
+		int Min = 9999;
+		while(move!=null) 
+		{
+		if(move.data < Min)
+		{
+			Min = move.data;
+			move = move.left;
+		}
+		}
+		return Min;
+	}
+	public int search()
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the data to search");
+		int data = sc.nextInt();
+		Node temp;
+		Node tag;
+		temp=root;
+		while(temp!=null)
+		{
+			if(data < temp.data)
+			{
+				tag=temp;
+				temp=temp.left;
+			}
+			else if(data > temp.data)
+			{
+				tag=temp;
+				temp=temp.right;
+			}
+			if(temp.data ==data)
+			{
+				System.out.println("Hurye!!!!Entered data is Found"+"\t"+data);
+			}
+			return data;
+		}
+		
+	}
+	
+
+}

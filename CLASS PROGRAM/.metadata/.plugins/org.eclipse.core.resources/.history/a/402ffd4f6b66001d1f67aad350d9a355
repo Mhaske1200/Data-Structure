@@ -1,0 +1,17 @@
+package Question_02;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		LinkedList cities=new LinkedList();
+		cities.addNode("Pune");
+		cities.addNode("Nashik");
+		cities.addNode("Nagar");
+		cities.addNode("Sambhaji Nagar");
+		cities.addNode("Latur");
+		cities.addNode("Nanded");
+		cities.display();
+		
+	}
+}

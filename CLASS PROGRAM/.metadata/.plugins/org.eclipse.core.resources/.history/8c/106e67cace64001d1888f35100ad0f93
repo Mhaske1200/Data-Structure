@@ -1,0 +1,21 @@
+package question_2;
+
+import java.util.Scanner;
+
+public class Test {
+	public static int postfixEva(String str)
+	{
+		int res=0;
+		return res;
+	}
+	public static void main(String[] args) {
+	
+		String str;
+		Scanner sc=new Scanner(System.in);
+		System.out.println(" Enter Postfix Expression ");
+		str=sc.next();
+		int res=postfixEva(str);
+		System.out.println(" Result "+res);
+	}
+
+}

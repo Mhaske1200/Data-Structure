@@ -1,0 +1,20 @@
+package Parenthesis_Balancing;
+
+public class Stack 
+{
+	int top , size;
+	char a[];
+
+	Stack()
+	{
+		top = -1;
+		size = 5;
+		a = new char[size];
+	}
+	Stack(int size)
+	{
+		top = -1;
+		this.size = size;
+		a = new char[size];
+	}
+}

@@ -1,0 +1,33 @@
+package Question_02;
+
+public class LinkedList {
+	Node head;
+	public LinkedList()
+	{
+		head=null;
+	}
+	public void addNode(String data)
+	{
+		Node newnode=new Node(data);
+		if(head==null)
+			head=newnode;
+		else
+		{
+			Node move=head;
+			while(move.next!=null)
+				move=move.next;
+			move.next=newnode;
+		}
+		
+	}
+	public Node firstNode()
+	{
+		return head;
+	}
+	public void display()
+	{
+		for(Node move=head;move!=null;move=move.next)
+			System.out.println(" "+move.data);
+	}
+
+}

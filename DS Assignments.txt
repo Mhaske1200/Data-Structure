@@ -1,0 +1,72 @@
+﻿**************** Logical Operations Of Array ***************
+1. Create arr of 5 interger and perform following operatios
+   1. Accept array
+   2. Display array
+   3. Search Element in array
+   4. Count sum of all odd numbers from array
+2.Write programs for the following using 1 D array
+   1. find Maximum number from given array
+   2. find maximum and minimum even number from the array
+   3. To rotate an array left and right by a given number K? (write 2 functions rotateLeft,rotateRight)    
+      example
+      arr=[1,2,3,4,5,6,7] if k=3
+      rotate left o/p [4,5,6,7,1,2,3]
+      rotateright o/p [5,6,7,1,2,3,4]
+   4. find addition of digits of all numbers
+   5. Display only numbers which appears more than once in the given array.
+3.Write programs for the following using 2 D array
+        1. Declare 1D array of 5 elements.
+        2. Create 2D array of 5 rows and 3 column.
+        3. First column hold all element from 1D array.
+        4. second column hold factorial of all numbers available in first column.
+        5. third column hold square of all numbers available in first column.
+
+********************Searching ******************
+1. Declare array of 10 integer and serch element in arrary.
+   return position of key(element to search) if element is available and return -1 if it is not available.
+2. Find out number of occurence of given element in array.
+3. Declare array of 10 integer and serch element in arrary with binary search technique.
+   find out number of interation to search element.
+
+*************** Sorting ***********************
+1. Impleent Bubble Sort for 10 integer array element. And Display number of passes and comparism.
+2. Implement selection sort for 10 Strings.
+
+************ Stack Using Array ***********************
+
+1.Create stack of integer.for storing first 10 prime numbers.
+2.1.Write a class MyStack to maintain stack of Books
+    add push, pop, isEmpty, isFull functions.
+    write default and parametrized constructor
+3. Implement stack for storing 10 city names.
+
+******************** 16-Nov*********************
+1 Create  MyStack class to check whether given string is balanced paranthesis or not
+example
+({[{}]}) ----- o/p balance string
+({[]}()()) --- balance string
+({[]} ------ not balanced string
+({[]}} ----- not balanced.
+
+2. Evaluate pofix expression using stack.
+   	Create a stack to store operands (or values). 
+	Scan the given expression from left to right and do the following for every scanned element. 
+	If the element is a number, push it into the stack 
+	If the element is an operator, pop operands for the operator from the stack. Evaluate the operator and push the result back to the stack 
+	When the expression is ended, the number in the stack is the final answer.
+      a=100
+      b=200
+      c=2
+      d=5
+      e=7
+
+nput: str = “ab+c/d*e+”
+Output: 757
+
+
+
+
+3. Implement Simple Queue using integer and String.
+
+
+

@@ -1,0 +1,14 @@
+package CORE;
+
+public class CORE02 {
+	
+	public static void main(String[] args) 
+	{
+		String s = "My Name is Shubham";
+		
+		System.out.println(s);
+
+	}
+	
+
+}

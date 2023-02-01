@@ -1,0 +1,44 @@
+package UserDefineDataTypeLL;
+
+public class LinkedList {
+	Node head;
+	public LinkedList()
+	{
+		head=null;
+	}
+	public Node getHead()
+	{
+		return head;
+	}
+	public void add(Employee data)
+	{
+		Node record=new Node(data);
+		if(head==null)
+			head=record;
+		else
+		{
+			Node move=head;
+			while(move.next!=null)
+				move=move.next;
+			move.next=record;
+		}
+	}
+	public void display()
+	{
+		if(head==null)
+		{
+			System.out.println(" Linked List Is Empty !!! ");
+			return;
+		}
+		 Node move=head;
+		 while(move!=null)
+		{
+		  System.out.println(move.data);
+			 move=move.next;
+		 }
+		
+	}
+
+	
+
+}

@@ -1,0 +1,24 @@
+package UserDefineDataTypeLL;
+
+public class Employee {
+
+	int eid;
+	String name;
+	double salary;
+	public Employee()
+	{
+		
+	}
+	public Employee(int i,String nm,double sal)
+	{
+		eid=i;
+		name=nm;
+		salary=sal;
+	}
+	public String toString()
+	{
+		return " [ "+eid+","+name+","+salary+" ] ";
+	}
+	
+	
+}

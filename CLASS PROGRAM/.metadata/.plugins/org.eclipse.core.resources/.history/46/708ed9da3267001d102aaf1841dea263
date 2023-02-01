@@ -1,0 +1,40 @@
+package UserDefineDataTypeLL;
+
+import java.util.Scanner;
+
+public class Test {
+	public static void main(String[] args) {
+		
+		Employee data;
+		int ch;
+		LinkedList list1=new LinkedList();
+		do
+		{
+			System.out.println("1. Add Node");
+			System.out.println("2. Display");
+			System.out.println("1. Add Node");
+			System.out.println("1. Add Node");
+			System.out.println("1. Add Node");
+			System.out.println("0. Exit");
+			System.out.println("Enter Your Choice ");
+			Scanner sc=new Scanner(System.in);
+			ch=sc.nextInt();
+			switch(ch)
+			{
+			case 1:
+				int eid;
+				String name;
+				double sal;
+				System.out.println(" Enter Id Name And Salary ");
+				eid=sc.nextInt();
+				name=
+			}
+
+
+		}
+	
+		
+		
+	}
+
+}
